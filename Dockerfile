@@ -11,8 +11,8 @@ WORKDIR /home/web
 
 ## Step 3:
 # Install packages from requirements.txt
-# hadolint ignore=DL3013
 RUN python3 -m venv ~/.devops
+# hadolint ignore=DL3013
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 ## Step 4:
